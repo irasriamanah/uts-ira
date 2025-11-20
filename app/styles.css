@@ -1,0 +1,197 @@
+/* ----------------------- CSS: styles.css ----------------------- */
+
+/* Layout */
+.page-container {
+    width: 100%;
+    padding: 40px 80px;
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+
+/* Header */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.title-text {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Add Button */
+.btn-warning-custom {
+    padding: 10px 24px;
+    background: #f4a100;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-warning-custom:hover {
+    background: #e09000;
+}
+
+/* Form */
+.form-container {
+    background: transparent;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: inline-flex;
+    gap: 50px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+
+}
+
+.input-field {
+    width: 370px;
+    height: 37px;
+    padding: 10px 14px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    background:white;
+
+}
+
+.input-field:focus {
+    border-color: #ffb000;
+}
+
+/* Submit / Edit Button */
+.btn-danger-custom {
+    width: 140px;
+    height: 42px;
+    border: none;
+    border-radius: 8px;
+    background: #ffb000;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-danger-custom:hover {
+    background: #e79c00;
+}
+
+
+.table-custom {
+  width: 100%;
+  border-collapse: collapse !important; 
+  table-layout: fixed;                  
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.table-custom th,
+.table-custom td {
+  padding: 14px 16px;
+  text-align: left;
+  vertical-align: middle;
+  box-sizing: border-box;
+  white-space: nowrap;           /* penting agar satu baris tidak membungkus */
+  overflow: hidden;
+  text-overflow: ellipsis;      /* jika terlalu panjang akan ... */
+}
+.table-custom th:nth-child(1),
+.table-custom td:nth-child(1) { width: 60px; }   /* No */
+.table-custom th:nth-child(2),
+.table-custom td:nth-child(2) { width: 110px; }  /* Name */
+.table-custom th:nth-child(3),
+.table-custom td:nth-child(3) { width: 110px; }  /* No Rm */
+.table-custom th:nth-child(4),
+.table-custom td:nth-child(4) { width: 110px; }  /* Date Of Birth */
+.table-custom th:nth-child(5),
+.table-custom td:nth-child(5) { width: 110px; }  /* Phone Number */
+.table-custom th:nth-child(6),
+.table-custom td:nth-child(6) { width: 110px; }  /* Address */
+.table-custom th:nth-child(7),
+.table-custom td:nth-child(7) { width: 110px; }   /* Actions (icons) */
+
+/* Jika kamu ingin garis pemisah tipis di bawah header */
+.table-custom thead th {
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Style baris data (tetap satu background putih) */
+.table-custom tbody tr {
+  background: #ffffff;
+  box-shadow: none; /* nonaktifkan jika shadow membuat ilusi misalignment */
+}
+
+/* Tempat icon di kanan */
+.td-actions {
+  display: flex;
+  justify-content: first baseline;
+  gap: 5px;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .table-custom th:nth-child(2),
+  .table-custom td:nth-child(2) { width: 180px; }
+  .table-custom th:nth-child(6),
+  .table-custom td:nth-child(6) { width: 120px; }
+}
+
+.table-custom tbody tr {
+    background: white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+.table-custom tbody tr td {
+    padding: 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Icons */
+.td-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.icon-btn:hover {
+    opacity: 1;
+}
+
+.btn-warning-custom {
+    background: #ffb000;
+    padding: 12px 26px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-warning-custom:hover {
+    background: #e79c00;
+}
+
+.table-row-rounded {
+    border-radius: 12px;
+}
