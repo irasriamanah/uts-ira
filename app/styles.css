@@ -92,7 +92,12 @@
   font-size: 14px;
   box-sizing: border-box;
 }
-
+.text-center {
+    text-align: center !important;
+    padding: 25px 14px;
+    font-style: italic;
+    color: #777;
+}
 .table-custom th,
 .table-custom td {
   padding: 14px 16px;
@@ -118,7 +123,7 @@
 .table-custom th:nth-child(7),
 .table-custom td:nth-child(7) { width: 110px; }   /* Actions (icons) */
 
-/* Jika kamu ingin garis pemisah tipis di bawah header */
+
 .table-custom thead th {
   border-bottom: 1px solid #eaeaea;
 }
@@ -169,10 +174,6 @@
     cursor: pointer;
 }
 
-.text-center {
-    text-align: center;
-    padding: 25px 0;
-}
 
 .icon-btn:hover {
     opacity: 1;

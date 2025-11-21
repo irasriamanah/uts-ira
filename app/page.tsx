@@ -204,7 +204,7 @@ export default function Home() {
             </tr>
           ) : users.length === 0 ? (
             <tr>
-              <td colSpan={7} className="text-center">No Data</td>
+              <td className="text-center" colSpan={7}>No Data</td>
             </tr>
           ) : (
             users.map((u, i) => (
