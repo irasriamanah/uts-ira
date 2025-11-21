@@ -2,7 +2,7 @@
 "use client";
 import api from "@/lib/axios";
 import React, { useEffect, useState } from "react";
-import "./styles.css"; // custom CSS tanpa bootstrap
+import "./styles.css"; 
 
 export default function Home() {
   const [showForm, setShowForm] = useState(false);
@@ -40,7 +40,16 @@ export default function Home() {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-
+     if (
+    !form.name.trim() ||
+    !form.no_rm.trim() ||
+    !form.date_of_birth.trim() ||
+    !form.phone_number.trim() ||
+    !form.address.trim()
+  ) {
+    alert("Data kosong!");
+    return; 
+  }
     try {
       if (isEdit) {
         await api.put(`/${form.id}`, form);
